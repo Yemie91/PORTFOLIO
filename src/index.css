@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100vh;
+    background: #161513;
+    color: white;
+}
+
+html{
+  scroll-behavior: smooth;
+   scroll-padding-top: 100px;
+}
+
+
+/* App.css */
+
+
+
+
+

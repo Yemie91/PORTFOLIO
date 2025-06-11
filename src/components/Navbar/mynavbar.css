@@ -1,0 +1,157 @@
+/* --- Default styles for desktop --- */
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 25px 10px;
+  background-color: #111;
+  color: white; 
+  position: sticky; /* Sticky behavior */
+  top: 0;            /* Stick to the top */
+  z-index: 1000;     /* Stay on top of other elements */
+  border-radius: 5px;
+}
+
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  
+  
+  
+}
+
+.nav-menu a {
+  color: rgb(251, 248, 248);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #DA7C25; /* optional: hover color */
+}
+
+
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.nav-connect {
+  padding: 10px 40px;
+  border-radius: 40px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1);
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.nav-connect:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* --- Hamburger icon --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* --- Responsive (phones) --- */
+
+/* Applies to all phones under 768px */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 5;
+    background-color: rgba(107, 7, 70, 0.7);
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    gap: 30px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    
+    
+
+    
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Additional smaller phone sizes */
+
+@media (max-width: 600px) {
+  .nav-menu {
+    gap: 24px;
+    font-size: 18px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    gap: 20px;
+    font-size: 16px;
+    
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-menu {
+    gap: 16px;
+    font-size: 15px;
+    
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .hamburger .bar {
+    width: 20px;
+  }
+}
