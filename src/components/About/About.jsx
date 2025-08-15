@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './About.css';
-import profile from '../../assets/profile.jpg';
+import aboutpics from '../../assets/aboutpics.jpg';
 
 function About() {
     
@@ -37,7 +37,7 @@ function About() {
 
       <div className='about-section'>
         <div className='about-left'>
-          <img src={profile} alt="Profile" />
+          <img src={aboutpics} alt="Profile" />
         </div>
 
         <div className='about-right'>
@@ -64,20 +64,14 @@ function About() {
               <p>JavaScript</p>
               <hr className='skill-bar' data-width="50%" />
             </div>
+            
             <div className='about-skill'>
-              <p>Next Js</p>
+              <p>Photoshop / UI/UX</p>
               <hr className='skill-bar' data-width="80%" />
             </div>
+            
             <div className='about-skill'>
-              <p>Figma for UI/UX</p>
-              <hr className='skill-bar' data-width="80%" />
-            </div>
-            <div className='about-skill'>
-              <p>Node Js</p>
-              <hr className='skill-bar' data-width="70%" />
-            </div>
-            <div className='about-skill'>
-              <p>Wordpress/Photoshop</p>
+              <p>Wordpress</p>
               <hr className='skill-bar' data-width="70%" />
             </div>
           </div>

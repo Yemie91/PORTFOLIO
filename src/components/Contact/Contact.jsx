@@ -33,7 +33,7 @@ function Contact() {
           <p>
             I'm currently available to work on new projects. Feel free to send me a message about anything you'd like me to work on. You can contact me anytime.
           </p>
-          <p><strong>Email:</strong> Gileon_Digital@gmail.com</p>
+          <p><strong>Email:</strong> Gileondigital@gmail.com</p>
           <p><strong>Phone:</strong> +234 806 296 5755</p>
           <p><strong>Location:</strong> Lagos, Nigeria</p>
         </div>
